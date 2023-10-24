@@ -7,3 +7,58 @@ html, body {
   text-align: center;
   font-size: 60px;
 }
+
+/* Header and Navbar Styles */
+nav {
+  background-color: #6d14c7;
+  padding: 1rem 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7d04e0ff;
+}
+
+/* Main Section Styles */
+section {
+  background-color: #7d04e0ff;
+  padding: 4rem 0;
+  color: white;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+}

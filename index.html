@@ -1,70 +1,105 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta content="#6d14c7" data-react-helmet="true" name="theme-color" />
-    <link rel="icon" type="image/png" href="/pixel-logo-rounded-nobg.png" />
-    <meta
-      property="og:image"
-      content="/pixel-logo-rounded-nobg.png"
-    />
-    <meta property="og:title" content="Pixelize Coding Community" />
-    <meta
-      property="og:description"
-      content="Pixelize - An active discord communtiy for coding enthusiasts!"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pixelize.dev" />
-    <meta
-      name="description"
-      content="Pixelize - An active discord communtiy for coding enthusiasts!"
-    />
-    <meta
-      name="keywords"
-      content="pixelize, programming, discord, coding, bot"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Pixelize</title>
-  </head>
+<html lang="en">
 
-  <body>
-    <header>
-      <nav class="bg-purple-600 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-          <h1 class="text-2xl font-bold text-white">Pixelize Coding Community</h1>
-          <ul class="space-x-4">
-            <li class="inline-block">
-              <a href="#" class="text-white hover:underline">Home</a>
-            </li>
-            <li class="inline-block">
-              <a href="#" class="text-white hover:underline">About</a>
-            </li>
-            <li class="inline-block">
-              <a href="#" class="text-white hover:underline">Services</a>
-            </li>
-            <li class="inline-block">
-              <a href="#" class="text-white hover:underline">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta content="#6d14c7" data-react-helmet="true" name="theme-color" />
+  <link rel="icon" type="image/png" href="/pixelize logo.JPG" />
+  <meta property="og:image" content="/pixel-logo-rounded-nobg.png" />
+  <meta property="og:title" content="Pixelize Coding Community" />
+  <meta property="og:description" content="Pixelize - An active discord community for coding enthusiasts!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pixelize.dev" />
+  <meta name="description" content="Pixelize - An active discord community for coding enthusiasts!" />
+  <meta name="keywords" content="pixelize, programming, discord, coding, bot" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Pixelize</title>
+</head>
 
-    <section class="bg-purple-900 py-16">
-      <div class="container mx-auto text-white text-center">
-        <h2 class="text-4xl font-extrabold mb-4">Welcome to Pixelize Coding Community Website!</h2>
-        <p class="text-lg">It's a bit plain... lol... it's not ready yet so be patient!</p>
+  <script src="script.js"></script>
+
+<body>
+
+  <header>
+    <nav class="bg-purple-600 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" id="logo">
+          <img src="pixelize logo.JPG" alt="Logo" height="70" width="70">
+        </a>
+        <ul class="space-x-4">
+          <li class="inline-block">
+            <a href="/" class="text-white hover:underline">Home</a>
+          </li>
+          <li class="inline-block">
+            <a onclick="openInNewTab('discord.html')" class="text-white hover:underline">Discord</a>
+          </li>
+          <li class="inline-block">
+            <a onclick="openInNewTab('github.html')" class="text-white hover:underline">Github</a>
+          </li>
+        </ul>
       </div>
-    </section>
-  </body>
+    </nav>
+  </header>
+
+  <section class="main-section">
+    <div class="container mx-auto text-white text-center">
+      <h2 class="text-4xl font-extrabold mb-4" id="home-title">Pixelize</h2>
+      <p class="text-lg">Join the large, active community of passionate developers and programmers no matter your skill level.
+      </p>
+      <button class="aboutus-button" onclick="openInNewTab('discord.html')">Discord</button>
+      <button class="aboutus-button" onclick="openInNewTab('github.html')">Github</button>
+    </div>
+  </section>
+
+  <section id="aboutus-section" class="section">
+    <div class="container mx-auto text-white text-center">
+      <h2 class="h2">About Us</h2>
+      <p class="p">Created in 2023, Pixelize is a community for developers and programmers. We believe in supporting fellow code enthusiasts and so we have grown our own community for this purpose!
+<br><br>
+<h3>What do we offer?</h3>
+Pixelize offers a wide range of free resources and materials, including:<br><br>
+• Free open source projects✔️<br>
+• Coding support channels✔️<br>
+• Self promotion channels✔️<br>
+• Upcoming free api and npm packages✔️<br>
+• Active community and staff!✔️
+      </p>
+    </div>
+  </section>
+
+
+  <section id="team-section" class="section">
+        <h2 class="h2">Our Team</h2>
+    <p class="p">Our staff work tirelessly to provide you with a better experience! You can check out some of our top-staff below!</p>
+      <div class="founder-container">
+        <img class="founder-img" src="/cheesepfp.png" alt="cheese's pfp">
+        <div class="founder-container2">
+        <h2 class="founder-title">devcheese - Founder</h2>
+        <p class="founder-description">Hello, I am cheese. I am one of the developers and founders here at Pixelize!
+  <br><br>
+  Contact: cheese@pixelize.dev</p>
+        </div>
+      </div>
+
+
+        <div id="last-founder-container" class="founder-container">
+          <img class="founder-img" src="/apulhpapfp.png" alt="apulpha's pfp">
+          <div class="founder-container2">
+          <h2 class="founder-title">apulhpa - Founder</h2>
+          <p class="founder-description">Hello, I am Apulhpa. I am one of the developers and founders here at Pixelize!
+        <br><br>
+        Contact: ap@pixelize.dev</p>
+          </div>
+        </div>
+  </section>
+
+<footer>
+  <p>Pixelize© 2023</p>
+</footer>
+
+</body>
+
 </html>

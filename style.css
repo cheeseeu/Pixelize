@@ -1,5 +1,11 @@
 html, body {
-  background-image: linear-gradient(to top right, #b004b0, #7d04e0ff);
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(to top right, #4f0471, #28047cff);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hometitle {
@@ -10,8 +16,8 @@ html, body {
 
 /* Header and Navbar Styles */
 nav {
-  background-color: #6d14c7;
-  padding: 1rem 0;
+  background-color: #2C2F33;
+  margin: 0; /* Remove default margin */
 }
 
 nav .container {
@@ -24,15 +30,20 @@ nav h1 {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  margin: 0; /* Remove default margin */
 }
 
 nav ul {
   list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 nav li {
   display: inline-block;
   margin-right: 1rem;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 nav a {
@@ -42,23 +53,164 @@ nav a {
 }
 
 nav a:hover {
-  color: #7d04e0ff;
+  color: #8001feff;
 }
 
 /* Main Section Styles */
 section {
-  background-color: #7d04e0ff;
-  padding: 4rem 0;
-  color: white;
+  background-color: #2C2F33;
+  color: #ffffff;
   text-align: center;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px black;
+  word-wrap: break-word;
 }
 
-section h2 {
+@font-face {
+  font-family: PixelifySans;
+  src: url(PixelifySans.ttf);
+}
+
+#home-title {
+  font-size: 100px;
+  font-weight: bold;
+  margin: auto;
+  background-image: linear-gradient(#9f03d8, #510292);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: PixelifySans;
+}
+
+
+.h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-section p {
+.p {
   font-size: 1rem;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.aboutus-button {
+  background-color: #8001feff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.aboutus-button:hover {
+  transform: scale(1.1);
+  background-color: #0401d0ff;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.founder-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px; 
+}
+
+.founder-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #949494ff;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 5px#380052;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.founder-container2 {
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
+  align-items: flex-start; 
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.founder-title {
+  font-size: 30px;
+  color: white;
+  margin: auto;
+  align-self: flex-start;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.founder-description {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  word-wrap: break-word; 
+}
+
+
+.main-section {
+  margin-bottom: 70px;
+  word-wrap: break-word; 
+}
+
+.team-section {
+  margin-bottom: 100px;
+  word-wrap: break-word;
+}
+
+footer {
+  background-color: #2C2F33;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin-top: 100px;
+}
+
+#last-founder-container {
+  margin-bottom: 60px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .founder-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-img {
+    margin-right: 0; /* Reset margin for smaller screens */
+    margin-bottom: 10px; /* Add margin between profile picture and title/description */
+  }
+
+  .founder-title {
+    align-self: center; /* Center title for smaller screens */
+  }
+
+  .founder-description {
+    text-align: center; /* Center description for smaller screens */
+  }
 }

@@ -1,23 +1,16 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+html,
+body {
   min-height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-image: linear-gradient(to top right, #4f0471, #28047cff);
+  background-image: linear-gradient(to right, #000000, #000000);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.hometitle {
-  color: #ffffff;
-  text-align: center;
-  font-size: 60px;
-}
-
-/* Header and Navbar Styles */
 nav {
-  background-color: #2C2F33;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 nav .container {
@@ -30,13 +23,19 @@ nav h1 {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  margin: 0; /* Remove default margin */
+  margin: 0;
+}
+
+nav img {
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto;
 }
 
 nav ul {
   list-style: none;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
@@ -53,164 +52,212 @@ nav a {
 }
 
 nav a:hover {
-  color: #8001feff;
+  color: #260C5A;
 }
 
-/* Main Section Styles */
-section {
-  background-color: #2C2F33;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 5px;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  box-shadow: 0px 0px 10px black;
-  word-wrap: break-word;
-}
-
-@font-face {
-  font-family: PixelifySans;
-  src: url(PixelifySans.ttf);
-}
-
-#home-title {
-  font-size: 100px;
-  font-weight: bold;
-  margin: auto;
-  background-image: linear-gradient(#9f03d8, #510292);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: PixelifySans;
-}
-
-
-.h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.p {
-  font-size: 1rem;
-}
-
-.section {
-  margin-top: 30px;
-}
-
-.aboutus-button {
-  background-color: #8001feff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.aboutus-button:hover {
-  transform: scale(1.1);
-  background-color: #0401d0ff;
-}
-
-img:hover {
-  cursor: pointer;
-}
-
-.founder-img {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 100px;
+#console2 {
+  padding: 10px;
+  margin: 20px;
+  white-space: pre-wrap;
+  background-color: #383838;
+  color: lime;
+  font-size: 20px;
+  border-radius: 10px;
+   font-family: "Fira Code", monospace;
   height: 100px;
-  margin-right: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: left;
 }
 
-.founder-container {
+#cursor {
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background-color: lime;
+  animation: blink 0.8s infinite;
+  margin-left: 3px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.coding-image {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#main {
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  margin-top: 20px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+#title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+#text {
+  color: white;
+}
+
+#discord-button {
+  background-color: #260C5A;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  font-size: 23px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+#discord-button:hover {
+  transform: scale(1.1);
+  background-color: #C52BE3;
+}
+
+.text-container {
+  color: white;
+  text-align: left;
+}
+
+#home-button {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+}
+
+#home-button:hover {
+  border-color: transparent;
+  background-color: white;
+  color: #260C5A;
+}
+
+.docs-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #fff;
+}
+
+.console {
+  background-color: #383838;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  nav h1 {
+    font-size: 1.2rem;
+  }
+
+  nav li {
+    font-size: 18px;
+  }
+
+  .coding-image {
+    width: 25%;
+    margin: auto;
+  }
+
+  #main {
+    margin-left: 10px;
+  }
+}
+
+#wave {
+  width: 100%;
+}
+
+.update-container {
+  background-color: #260C5A;
+  color: #fff;
   padding: 10px;
   border-radius: 10px;
-  background-color: #949494ff;
-  margin-top: 20px;
-  box-shadow: 0px 0px 10px 5px#380052;
-  overflow: hidden;
-  word-wrap: break-word;
+  animation: transform 1s;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 0px 10px #260C5A;
 }
 
-.founder-container2 {
-  flex-direction: column;
-  padding: 10px;
-  text-align: left;
-  align-items: flex-start; 
-  overflow: hidden;
-  word-wrap: break-word;
+.update-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px #ffffff;
+  cursor: pointer;
 }
 
-.founder-title {
-  font-size: 30px;
-  color: white;
-  margin: auto;
-  align-self: flex-start;
-  overflow: hidden;
-  word-wrap: break-word;
-}
-
-.founder-description {
-  font-size: 20px;
-  color: white;
-  margin: 0;
-  overflow: hidden;
-  word-wrap: break-word; 
-}
-
-
-.main-section {
-  margin-bottom: 70px;
-  word-wrap: break-word; 
-}
-
-.team-section {
-  margin-bottom: 100px;
-  word-wrap: break-word;
+.glowing-text {
+  text-shadow: 0px 0px 5px #ffffff;
 }
 
 footer {
-  background-color: #2C2F33;
-  text-align: center;
-  color: white;
+  background-color: #260C5A;
   padding: 5px;
+  margin-bottom: 0px;
+  width: 99%;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #fff;
   margin-top: 100px;
+  border-radius: 10px;
 }
 
-#last-founder-container {
-  margin-bottom: 60px;
+#online {
+  background-color: #260C5A;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 10px #C52BE3;
+  margin-right: 0px;
+  max-width: 20%;
+  margin-left: 30%;
+}
+
+#text-image {
+  max-width: 50%;
 }
 
 
-@media only screen and (max-width: 600px) {
-  .founder-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.main2 {
+  padding: 30px;
+  border-radius: 10px;
+}
 
-  .founder-img {
-    margin-right: 0; /* Reset margin for smaller screens */
-    margin-bottom: 10px; /* Add margin between profile picture and title/description */
-  }
+.founders {
+  color: #808080
+}
 
-  .founder-title {
-    align-self: center; /* Center title for smaller screens */
-  }
+.admins {
+  color: #6800ad
+}
 
-  .founder-description {
-    text-align: center; /* Center description for smaller screens */
-  }
+.staff {
+  color: #5c5c5c
+}
+
+.moderators {
+  color: #1ce401
 }
